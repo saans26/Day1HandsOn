@@ -8,26 +8,44 @@ Example2) if the first character is 'a' and second character is 'e', then the ou
 package Day1;
 import java.util.Scanner;
 
-public class AlphaOrder {
-
+public class ColorCode {
+	
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Enter 1st Character :");
-		char a = sc.next().charAt(0);
+		System.out.println("Enter the code :");
+		char c = sc.next().charAt(0);
 		
-		System.out.println("Enter 2st Character :");
-		char b = sc.next().charAt(0);
+		switch(c)
+		{
+		case 'R':
+			System.out.println("R->Red");
+			break;
+		case 'G':
+			System.out.println("G->Green");
+			break;
+		case 'B':
+			System.out.println("B->Blue");
+			break;
+		case 'Y':
+			System.out.println("Y->Yellow");
+			break;
+		case 'O':
+			System.out.println("O->Orange");
+			break;
+		case 'W':
+			System.out.println("W->White");
+			break;
+		default: System.out.println("Invalid Input");
 		
-		if(a<b) 
-		{
-			System.out.println(a + "," + b);
-		}
-		else
-		{
-			System.out.println(b + "," + a);
 		}
 	}
 
 }
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Securit
